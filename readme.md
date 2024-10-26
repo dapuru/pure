@@ -1,6 +1,7 @@
 # Pure
 
 > Pretty, minimal and fast ZSH prompt
+
 Forked from https://github.com/sindresorhus/pure and added:
 - No empty line: https://github.com/sindresorhus/pure/issues/509
 - Optional transient prompt: https://gist.github.com/subnut/3af65306fbecd35fe2dda81f59acf2b2
@@ -54,7 +55,7 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
 ```sh
 mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+git clone https://github.com/dapuru/pure.git "$HOME/.zsh/pure"
 ```
 
 2. Add the path of the cloned repo to `$fpath` in `$HOME/.zshrc`.
