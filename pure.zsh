@@ -188,7 +188,7 @@ prompt_pure_preprompt_render() {
 
 	if [[ $1 == precmd ]]; then
 		# Initial newline, for spaciousness.
-		print
+		# print
 	elif [[ $prompt_pure_last_prompt != $expanded_prompt ]]; then
 		# Redraw the prompt.
 		prompt_pure_reset_prompt
@@ -788,6 +788,12 @@ prompt_pure_system_report() {
 }
 
 prompt_pure_setup() {
+
+	# Add optional transient prompt
+	if [[ $PURE_TRANSIENT_PROMPT == 1 ]]; then
+		source $HOME/.zsh/pure/transient_prompt.zsh
+	fi
+
 	# Prevent percentage showing up if output doesn't end with a newline.
 	export PROMPT_EOL_MARK=''
 

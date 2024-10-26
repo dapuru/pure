@@ -1,6 +1,9 @@
 # Pure
 
 > Pretty, minimal and fast ZSH prompt
+Forked from https://github.com/sindresorhus/pure and added:
+- No empty line: https://github.com/sindresorhus/pure/issues/509
+- Optional transient prompt: https://gist.github.com/subnut/3af65306fbecd35fe2dda81f59acf2b2
 
 <img src="screenshot.png" width="864">
 
@@ -83,6 +86,8 @@ prompt pure
 | **`PURE_GIT_DOWN_ARROW`**        | Defines the git down arrow symbol.                                                             | `⇣`            |
 | **`PURE_GIT_UP_ARROW`**          | Defines the git up arrow symbol.                                                               | `⇡`            |
 | **`PURE_GIT_STASH_SYMBOL`**      | Defines the git stash symbol.                                                                  | `≡`            |
+| **`PURE_TRANSIENT_PROMPT`**  | Enable (1) or disable (0) transient prompt.                                                              | `0`            |
+
 
 ## Zstyle options
 
